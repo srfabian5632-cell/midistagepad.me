@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Midi Stage Pad</title>
+  <style>
+    /* Base */
+    :root{
+      --fondo: #111;
+      --panel: #333;
+      --texto: #fff;
+      --rojo: #FF0000;
+      --nav-bg: #222;
+      --footer-bg: #000;
+      --link: #1E90FF;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:var(--fondo);
+      color:var(--texto);
+    }
+
+    /* Header con logo grande */
+    header{
+      background: var(--footer-bg);
+      padding: 18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:center; /* centra logo + título */
+      gap:18px;
+    }
+    header .brand{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+    header img{
+      height: 100px;    /* logo grande: ajusta aquí si lo quieres mayor/menor */
+      width: auto;
+      display:block;
+    }
+    header h1{
+      margin:0;
+      color: var(--rojo);
+      font-size: 36px;
+      line-height:1;
+      letter-spacing:1px;
+    }
+
+    /* Navegación */
+    nav{
+      background: var(--nav-bg);
+      display:flex;
+      justify-content:center;
+      gap:14px;
+      padding:10px 8px;
+      flex-wrap:wrap;
+    }
+    nav a{
+      color: var(--texto);
+      text-decoration:none;
+      font-weight:700;
+      padding:8px 12px;
+      border-radius:8px;
+    }
+    nav a:hover{ background: var(--rojo); color:#fff; }
+
+    /* Contenido en cuadros */
+    main{
+      padding: 20px;
+      min-height: 60vh;
+    }
+    .section{
+      background: var(--panel);
+      max-width: 1000px;
+      margin: 18px auto;
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid var(--rojo);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+    }
+    .section h2{
+      margin:0 0 10px 0;
+      color: var(--rojo);
+      font-size: 1.4rem;
+    }
+    .section p, .section ul{ color: #eee; line-height:1.6; }
+
+    /* Footer */
+    footer{
+      background: var(--footer-bg);
+      color:#ccc;
+      text-align:center;
+      padding:12px 10px;
+    }
+
+    /* Responsive */
+    @media (max-width:720px){
+      header img{ height:72px; }
+      header h1{ font-size:24px; }
+      .section{ margin:12px; padding:16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <img src="logo.png" alt="Logo Midi Stage Pad">
+      <h1>Midi Stage Pad</h1>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="producto.html">Producto</a>
+    <a href="artistas.html">Artistas</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="actualizaciones.html">Actualizaciones</a>
+  </nav>
+
+  <main>
+    <!-- EJEMPLO: reemplaza / duplica estas .section por el contenido de cada página -->
+    <div class="section">
+      <h2>Bienvenido</h2>
+      <p>Este es un ejemplo de sección encerrada en un cuadro. Sustituye este contenido por el de tu página (Inicio, Producto, etc.).</p>
+    </div>
+
+    <div class="section">
+      <h2>Novedades</h2>
+      <p>Otro cuadro de ejemplo — las secciones siempre aparecerán centradas y con borde rojo.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Midi Stage Pad. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
