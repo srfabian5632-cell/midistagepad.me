@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Producto - Midi Stage Pad</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+ header img{
+      height: 100px;    /* logo grande: ajusta aquí si lo quieres mayor/menor */
+      width: auto;
+      display:block;
+    }
+    header {
+      background-color: #000;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      color: #FF0000; /* rojo */
+      font-size: 28px;
+    }
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+    nav a:hover {
+      background-color: #FF0000;
+    }
+    .section {
+      background-color: #333;
+      margin: 20px auto;
+      padding: 15px;
+      max-width: 900px;
+      border: 2px solid #FF0000;
+      border-radius: 10px;
+    }
+    .section h2 { margin-top: 0; }
+    ul.features {
+      line-height: 1.6;
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+    ul.features li {
+      margin-bottom: 8px;
+    }
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+ <header>
+  <div class="brand">
+    <img src="logo.png" alt="Logo Midi Stage Pad">
+    <h1>Midi Stage Pad</h1>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="producto.html">Producto</a>
+  <a href="artistas.html">Artistas</a>
+  <a href="nosotros.html">Nosotros</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="actualizaciones.html">Actualizaciones</a>
+</nav>
+
+  <main>
+    <div class="section">
+      <h2>El Producto</h2>
+      <p>Midi Stage Pad busca crear una superficie plana con pads musicales sensibles al tacto que puedan emular instrumentos de percusión. Está pensado para ser accesible, de bajo costo, silencioso y sostenible, usando tecnologías como sensores, Arduino y salida de audio por audífonos o altavoces. El objetivo es facilitar el acceso a la práctica musical, especialmente para personas que no pueden tener instrumentos por temas de precio, espacio, ruido o impacto ambiental.</p>
+    </div>
+
+    <div class="section">
+      <h2>Características</h2>
+      <ul class="features">
+        <li>Superficie plana con pads sensibles al tacto para tocar con las manos o baquetas.</li>
+        <li>Emulación de instrumentos de percusión (batería, bongós, congas, etc.).</li>
+        <li>Bajo costo: pensado para ser accesible para estudiantes y aficionados.</li>
+        <li>Silencioso: salida de sonido por audífonos o altavoces para evitar ruido.</li>
+        <li>Compacto y fácil de transportar, ideal para espacios pequeños.</li>
+        <li>Tecnología basada en Arduino y sensores para detectar golpes y presiones.</li>
+        <li>Sostenible, buscando reducir el impacto ambiental en su fabricación.</li>
+        <li>Interfaz MIDI (opcional) para conectarse a software musical y ampliar sonidos.</li>
+        <li>Diseño personalizable, permitiendo ajustar volumen, tonos o kits de percusión.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Ventajas</h2>
+      <p>Diseñado para ser práctico en el aprendizaje, presentaciones y producción en espacios reducidos, manteniendo un enfoque en sostenibilidad y accesibilidad económica.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Midi Stage Pad. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
