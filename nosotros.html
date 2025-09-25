@@ -13,12 +13,28 @@
     }
     header {
       background-color: #000;
-      padding: 15px;
-      text-align: center;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+    header .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    header img {
+      height: 100px;    
+      width: auto;
+      display: block;
     }
     header h1 {
+      margin: 0;
       color: #FF0000; /* rojo */
-      font-size: 28px;
+      font-size: 36px;
+      line-height: 1;
+      letter-spacing: 1px;
     }
     nav {
       background-color: #222;
@@ -61,7 +77,10 @@
 </head>
 <body>
   <header>
-    <h1>Midi Stage Pad</h1>
+    <div class="brand">
+      <img src="logo.png" alt="Logo Midi Stage Pad">
+      <h1>Midi Stage Pad</h1>
+    </div>
   </header>
 
   <nav>
