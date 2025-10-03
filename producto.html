@@ -11,34 +11,30 @@
       background-color: #111;
       color: #fff;
     }
- header{
-  background: #000;
-  padding: 18px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:center; 
-  gap:18px;
-}
-header .brand{
-  display:flex;
-  align-items:center;
-  gap:16px;
-}
-header img{
-  height: 100px;    
-  width: auto;
-  display:block;
-}
-header h1{
-  margin:0;
-  color: #FF0000;
-  font-size: 36px;
-  line-height:1;
-  letter-spacing:1px;
-}
-    header h1 {
-      color: #FF0000; /* rojo */
-      font-size: 28px;
+    header{
+      background: #000;
+      padding: 18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:center; 
+      gap:18px;
+    }
+    header .brand{
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+    header img{
+      height: 100px;    
+      width: auto;
+      display:block;
+    }
+    header h1{
+      margin:0;
+      color: #FF0000;
+      font-size: 36px;
+      line-height:1;
+      letter-spacing:1px;
     }
     nav {
       background-color: #222;
@@ -64,16 +60,26 @@ header h1{
       max-width: 900px;
       border: 2px solid #FF0000;
       border-radius: 10px;
+      text-align: center;
     }
-    .section h2 { margin-top: 0; }
-    ul.features {
-      line-height: 1.6;
-      margin: 10px 0 0 20px;
-      padding: 0;
+    .section h2 { margin-top: 0; color: #FF0000; }
+    
+    /* Estilos para las imágenes del folleto */
+    .folleto-images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
     }
-    ul.features li {
-      margin-bottom: 8px;
+    .folleto-images img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      border: 2px solid #FF0000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
+
     footer {
       background-color: #000;
       color: #ccc;
@@ -126,6 +132,16 @@ header h1{
     <div class="section">
       <h2>Ventajas</h2>
       <p>Diseñado para ser práctico en el aprendizaje, presentaciones y producción en espacios reducidos, manteniendo un enfoque en sostenibilidad y accesibilidad económica.</p>
+    </div>
+
+    <!-- 🔹 Nueva sección Folleto -->
+    <div class="section">
+      <h2>Folleto</h2>
+      <p>Aquí puedes ver una muestra de nuestro folleto informativo sobre el proyecto:</p>
+      <div class="folleto-images">
+        <img src="Folleto.png" alt="Folleto Midi Stage Pad">
+        <img src="Folleto2.png" alt="Folleto Midi Stage Pad 2">
+      </div>
     </div>
   </main>
 
