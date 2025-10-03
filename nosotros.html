@@ -60,18 +60,36 @@
       max-width: 900px;
       border: 2px solid #FF0000;
       border-radius: 10px;
-      text-align: center; /* centra el contenido de texto e imágenes */
-    }
-    .section img {
-      display: block;
-      margin: 15px auto; /* centra horizontalmente */
-      max-width: 100%; /* para que no se deforme */
-      height: auto;
-      border-radius: 10px; /* opcional: esquinas redondeadas */
+      text-align: center;
     }
     .section h2 {
       margin-top: 0;
+      color: #FF0000;
     }
+    .section img {
+      display: block;
+      margin: 15px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* 🔹 Estilo especial para las tarjetas de presentación */
+    .tarjetas {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    .tarjetas img {
+      width: 260px;
+      max-width: 100%;
+      border-radius: 10px;
+      border: 2px solid #FF0000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+
     footer {
       background-color: #000;
       color: #ccc;
@@ -104,7 +122,6 @@
     <div class="section">
       <h2>Quiénes Somos</h2>
       <p>Somos un equipo apasionado por la música y la tecnología. Midi Stage Pad nace con el objetivo de democratizar el acceso a la percusión mediante un dispositivo portátil, silencioso y accesible.</p>
-      <!-- Imagen añadida -->
       <img src="nosotros.png" alt="Equipo Midi Stage Pad">
     </div>
 
@@ -116,6 +133,17 @@
     <div class="section">
       <h2>Visión</h2>
       <p>Para el año 2030, Midi Stage Pad S.A.S. será reconocida por su innovación y sostenibilidad en la industria musical, ampliando su diseño a nuevos tipos de instrumentos y transformando la forma de interpretarlos con tecnología ecoamigable. </p>
+    </div>
+
+    <!-- 🔹 Nueva sección de Tarjetas de Presentación -->
+    <div class="section">
+      <h2>Tarjetas de Presentación</h2>
+      <p>Aquí puedes ver nuestras tarjetas de presentación:</p>
+      <div class="tarjetas">
+        <img src="tarjeta1.png" alt="Tarjeta de presentación 1">
+        <img src="tarjeta2.png" alt="Tarjeta de presentación 2">
+        <img src="tarjeta3.png" alt="Tarjeta de presentación 3">
+      </div>
     </div>
   </main>
 
