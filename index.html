@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Midi Stage Pad</title>
   <style>
-   
     :root{
       --fondo: #111;
       --panel: #333;
@@ -17,15 +16,18 @@
     }
     *{box-sizing:border-box}
 
-    /* 🔹 Fondo estilo escenario musical */
+    /* 🔹 Fondo con imagen + efecto escenario */
     body{
       margin:0;
       font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top left, #ff0000 0%, transparent 40%),
-                  radial-gradient(circle at top right, #1e90ff 0%, transparent 40%),
-                  radial-gradient(circle at bottom, #111 0%, #000 100%);
+      background:
+        radial-gradient(circle at top left, rgba(255,0,0,0.4) 0%, transparent 40%),
+        radial-gradient(circle at top right, rgba(30,144,255,0.4) 0%, transparent 40%),
+        radial-gradient(circle at bottom, #111 0%, #000 100%),
+        url("fondo midi.png");
       background-attachment: fixed;
       background-size: cover;
+      background-position: center;
       color: var(--texto);
     }
 
@@ -77,7 +79,7 @@
       min-height: 60vh;
     }
     .section{
-      background: var(--panel);
+      background: rgba(51,51,51,0.9); /* 🔹 Fondo semi-transparente */
       max-width: 1000px;
       margin: 18px auto;
       padding: 20px;
@@ -133,30 +135,27 @@
   </nav>
 
   <main>
-   
     <div class="section">
       <h2>Bienvenido</h2>
-      <p> El Midi Stage Pad es un invento pensado para que cualquiera pueda hacer música sin tantas barreras. Es como una batería, pero en versión digital: una superficie plana con pads sensibles al tacto que responden a cada golpe y lo convierten en sonidos de percusión. 
+      <p>El Midi Stage Pad es un invento pensado para que cualquiera pueda hacer música sin tantas barreras. Es como una batería, pero en versión digital: una superficie plana con pads sensibles al tacto que responden a cada golpe y lo convierten en sonidos de percusión. 
 
-La idea es que sea fácil de usar, portátil y mucho más económico que un instrumento tradicional. Puedes conectarle audífonos y practicar sin molestar a nadie, o enchufarlo a un parlante para compartir tu música con los demás. Además, lo hemos diseñado con materiales que buscan ser más amigables con el medio ambiente, porque también queremos que el proyecto aporte a la sostenibilidad. 
+      La idea es que sea fácil de usar, portátil y mucho más económico que un instrumento tradicional. Puedes conectarle audífonos y practicar sin molestar a nadie, o enchufarlo a un parlante para compartir tu música con los demás. Además, lo hemos diseñado con materiales que buscan ser más amigables con el medio ambiente, porque también queremos que el proyecto aporte a la sostenibilidad. 
 
-En pocas palabras: es un dispositivo hecho para aprender, experimentar y disfrutar de la música en cualquier lugar, sin complicaciones. </p>
+      En pocas palabras: es un dispositivo hecho para aprender, experimentar y disfrutar de la música en cualquier lugar, sin complicaciones.</p>
     </div>
 
     <div class="section">
       <h2>Novedades</h2>
-      <p> Estamos muy emocionados con los avances de Midi Stage Pad. Ya tenemos un prototipo funcionando que reconoce los golpes en los pads y reproduce distintos sonidos de batería. Poco a poco hemos ido puliendo detalles, como la sensibilidad al tacto, para que tocar se sienta más natural y divertido.
+      <p>Estamos muy emocionados con los avances de Midi Stage Pad. Ya tenemos un prototipo funcionando que reconoce los golpes en los pads y reproduce distintos sonidos de batería. Poco a poco hemos ido puliendo detalles, como la sensibilidad al tacto, para que tocar se sienta más natural y divertido.
 
-También añadimos más sonidos: ahora puedes tocar desde un bombo hasta un platillo o una conga, todo en el mismo dispositivo. El diseño físico lo hemos mejorado para que sea más ligero y resistente, ideal para llevarlo a cualquier parte. </p>
+      También añadimos más sonidos: ahora puedes tocar desde un bombo hasta un platillo o una conga, todo en el mismo dispositivo. El diseño físico lo hemos mejorado para que sea más ligero y resistente, ideal para llevarlo a cualquier parte.</p>
     </div>
 
-    <!-- 🔹 Nueva sección de Infografía -->
     <div class="section">
       <h2>Infografía</h2>
       <p>Aquí puedes ver de forma visual cómo funciona y qué ofrece el Midi Stage Pad:</p>
       <img src="infografia.png" alt="Infografía Midi Stage Pad">
     </div>
-
   </main>
 
   <footer>
