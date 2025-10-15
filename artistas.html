@@ -5,33 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artistas - Midi Stage Pad</title>
   <style>
+    :root {
+      --rojo: #FF0000;
+      --panel: #333;
+      --texto: #fff;
+      --footer-bg: #000;
+    }
+
     body {
       margin: 0; 
       font-family: Arial, sans-serif; 
-      color: #fff;
+      color: var(--texto);
       background: url('fondo midi.png') no-repeat center center fixed;
       background-size: cover;
     }
 
+    /* 🔹 Encabezado con logo y nombre */
     header {
-      background-color: #000; 
-      padding: 15px; 
-      text-align: center;
+      background-color: var(--footer-bg); 
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    header .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    header img {
+      height: 100px;    
+      width: auto;
+      display: block;
     }
 
     header h1 {
-      color: #FF0000; 
-      font-size: 28px;
       margin: 0;
+      color: var(--rojo);
+      font-size: 36px;
+      line-height: 1;
+      letter-spacing: 1px;
     }
 
-    /* Barra del menú en rojo */
+    /* 🔹 Menú rojo */
     nav {
-      background-color: #FF0000; 
+      background-color: var(--rojo); 
       display: flex; 
       justify-content: center; 
       gap: 15px; 
       padding: 10px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -44,23 +70,31 @@
     }
 
     nav a:hover {
-      background-color: #000;
+      background-color: #fff;
+      color: var(--rojo);
     }
 
-    /* Secciones sólidas (sin transparencia) */
+    /* 🔹 Secciones sólidas */
     .section {
-      background-color: #333; 
+      background-color: var(--panel); 
       margin: 20px auto; 
-      padding: 15px; 
-      max-width: 800px; 
-      border: 2px solid #FF0000; 
-      border-radius: 10px;
+      padding: 20px; 
+      max-width: 900px; 
+      border: 2px solid var(--rojo); 
+      border-radius: 12px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.45);
     }
 
     .section h2 {
-      color: #FF0000;
+      color: var(--rojo);
+      font-size: 1.6rem;
+      margin-top: 0;
+    }
+
+    .section p {
+      line-height: 1.6;
+      color: #eee;
     }
 
     .section img {
@@ -69,12 +103,12 @@
       max-width: 100%;
       height: auto;
       border-radius: 10px;
-      border: 2px solid #FF0000;
+      border: 2px solid var(--rojo);
       box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
 
     footer {
-      background-color: #000; 
+      background-color: var(--footer-bg); 
       color: #ccc; 
       text-align: center; 
       padding: 10px; 
@@ -82,13 +116,25 @@
       bottom: 0; 
       width: 100%;
     }
+
+    @media (max-width: 720px) {
+      header img { height: 80px; }
+      header h1 { font-size: 26px; }
+      .section { margin: 12px; padding: 16px; }
+    }
   </style>
 </head>
 <body>
+
+  <!-- 🔹 Encabezado con logo -->
   <header>
-    <h1>Midi Stage Pad</h1>
+    <div class="brand">
+      <img src="logo.png" alt="Logo Midi Stage Pad">
+      <h1>Midi Stage Pad</h1>
+    </div>
   </header>
 
+  <!-- 🔹 Barra de navegación -->
   <nav>
     <a href="index.html">Inicio</a>
     <a href="producto.html">Producto</a>
@@ -98,6 +144,7 @@
     <a href="actualizaciones.html">Actualizaciones</a>
   </nav>
 
+  <!-- 🔹 Contenido principal -->
   <main>
     <div class="section">
       <h2>Artistas</h2>
@@ -111,9 +158,11 @@
     </div>
   </main>
 
+  <!-- 🔹 Pie de página -->
   <footer>
     <p>© 2025 Midi Stage Pad. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
 
