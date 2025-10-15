@@ -8,11 +8,12 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
       color: #fff;
+      background: url('fondo midi.png') no-repeat center center fixed;
+      background-size: cover;
     }
     header {
-      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.9);
       padding: 18px 20px;
       display: flex;
       align-items: center;
@@ -37,7 +38,7 @@
       letter-spacing: 1px;
     }
     nav {
-      background-color: #222;
+      background-color: #FF0000; /* barra roja */
       display: flex;
       justify-content: center;
       gap: 15px;
@@ -51,16 +52,17 @@
       border-radius: 8px;
     }
     nav a:hover {
-      background-color: #FF0000;
+      background-color: #222;
     }
     .section {
-      background-color: #333;
+      background-color: #333; /* sin transparencia */
       margin: 20px auto;
       padding: 15px;
       max-width: 900px;
       border: 2px solid #FF0000;
       border-radius: 10px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
     }
     .section h2 {
       margin-top: 0;
@@ -74,7 +76,6 @@
       border-radius: 10px;
     }
 
-    /* 🔹 Estilo especial para las tarjetas de presentación */
     .tarjetas {
       display: flex;
       justify-content: center;
@@ -91,7 +92,7 @@
     }
 
     footer {
-      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.9);
       color: #ccc;
       text-align: center;
       padding: 10px;
@@ -135,7 +136,6 @@
       <p>Para el año 2030, Midi Stage Pad S.A.S. será reconocida por su innovación y sostenibilidad en la industria musical, ampliando su diseño a nuevos tipos de instrumentos y transformando la forma de interpretarlos con tecnología ecoamigable. </p>
     </div>
 
-    <!-- 🔹 Nueva sección de Tarjetas de Presentación -->
     <div class="section">
       <h2>Tarjetas de Presentación</h2>
       <p>Aquí puedes ver nuestras tarjetas de presentación:</p>
