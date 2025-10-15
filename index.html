@@ -10,7 +10,7 @@
       --panel: #333;
       --texto: #fff;
       --rojo: #FF0000;
-      --nav-bg: #222;
+      --nav-bg: #FF0000; /* 🔹 Color del menú cambiado al rojo */
       --footer-bg: #000;
       --link: #1E90FF;
     }
@@ -54,6 +54,7 @@
       letter-spacing:1px;
     }
 
+    /* 🔹 Menú rojo */
     nav{
       background: var(--nav-bg);
       display:flex;
@@ -63,13 +64,14 @@
       flex-wrap:wrap;
     }
     nav a{
-      color: var(--texto);
+      color: #fff;
       text-decoration:none;
       font-weight:700;
       padding:8px 12px;
       border-radius:8px;
+      transition: background 0.3s, color 0.3s;
     }
-    nav a:hover{ background: var(--rojo); color:#fff; }
+    nav a:hover{ background: #fff; color: var(--rojo); }
 
     main{
       padding: 20px;
