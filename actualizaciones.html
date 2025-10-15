@@ -8,25 +8,33 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
       color: #fff;
+      background: url('fondo midi.png') no-repeat center center fixed;
+      background-size: cover;
     }
     header {
-      background-color: #000;
-      padding: 15px;
-      text-align: center;
-    }
-    header h1 {
-      color: #FF0000;
-      font-size: 28px;
+      background-color: rgba(0, 0, 0, 0.9);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      gap: 18px;
+      flex-direction: column;
     }
     header img {
-      max-width: 120px;
+      height: 100px;    
+      width: auto;
       display: block;
-      margin: 0 auto 10px auto;
+    }
+    header h1 {
+      margin: 0;
+      color: #FF0000; 
+      font-size: 36px;
+      line-height: 1;
+      letter-spacing: 1px;
     }
     nav {
-      background-color: #222;
+      background-color: #FF0000; /* barra roja */
       display: flex;
       justify-content: center;
       gap: 15px;
@@ -38,18 +46,24 @@
       font-weight: bold;
       padding: 6px 12px;
       border-radius: 8px;
+      transition: background 0.3s;
     }
     nav a:hover {
-      background-color: #1E90FF;
+      background-color: #222;
     }
     .section {
-      background-color: #333;
+      background-color: #333; /* sólida */
       margin: 20px auto;
       padding: 15px;
       max-width: 800px;
       border: 2px solid #FF0000;
       border-radius: 10px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+    .section h2 {
+      margin-top: 0;
+      color: #FF0000;
     }
     .section img {
       max-width: 100%;
@@ -66,15 +80,17 @@
       margin-top: 10px;
     }
     .links a {
-      color: #1E90FF;
+      color: #fff;
       text-decoration: none;
       font-size: 18px;
+      transition: 0.3s;
     }
     .links a:hover {
+      color: #FF0000;
       text-decoration: underline;
     }
     footer {
-      background-color: #000;
+      background-color: rgba(0, 0, 0, 0.9);
       color: #ccc;
       text-align: center;
       padding: 10px;
@@ -86,7 +102,7 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo Midi Stage Pad"> <!-- Imagen añadida -->
+    <img src="logo.png" alt="Logo Midi Stage Pad">
     <h1>Midi Stage Pad</h1>
   </header>
 
@@ -96,14 +112,13 @@
     <a href="artistas.html">Artistas</a>
     <a href="nosotros.html">Nosotros</a>
     <a href="contacto.html">Contacto</a>
-    <a href="actualizaciones.html">Actualizaciones</a>
+    <a href="actualizaciones.html" aria-current="page">Actualizaciones</a>
   </nav>
 
   <main>
     <div class="section">
       <h2>Últimas actualizaciones</h2>
       <p>Mantente al día con nuestras novedades, versiones y mejoras del Midi Stage Pad.</p>
-      <!-- Imagen de volante añadida -->
       <img src="bolante.png" alt="Volante informativo Midi Stage Pad">
     </div>
 
