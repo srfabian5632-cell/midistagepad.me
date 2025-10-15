@@ -16,7 +16,7 @@
     }
     *{box-sizing:border-box}
 
-    /* 🔹 Fondo con imagen completa */
+    /* 🔹 Fondo con imagen */
     body{
       margin:0;
       font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +29,7 @@
     }
 
     header{
-      background: rgba(0,0,0,0.8);
+      background: var(--footer-bg);
       padding: 18px 20px;
       display:flex;
       align-items:center;
@@ -55,7 +55,7 @@
     }
 
     nav{
-      background: rgba(34,34,34,0.85);
+      background: var(--nav-bg);
       display:flex;
       justify-content:center;
       gap:14px;
@@ -75,8 +75,10 @@
       padding: 20px;
       min-height: 60vh;
     }
+
+    /* 🔹 Recuadros sólidos (sin transparencia) */
     .section{
-      background: rgba(51,51,51,0.9); /* 🔹 Fondo semitransparente para leer bien sobre la imagen */
+      background: var(--panel);
       max-width: 1000px;
       margin: 18px auto;
       padding: 20px;
@@ -100,7 +102,7 @@
     }
 
     footer{
-      background: rgba(0,0,0,0.8);
+      background: var(--footer-bg);
       color:#ccc;
       text-align:center;
       padding:12px 10px;
